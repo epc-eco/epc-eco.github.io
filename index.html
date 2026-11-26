@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L'économie, c'est ma vie ! — Économie & Droit</title>
+<link rel="icon" type="image/svg+xml" href="commun/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="commun/favicon-32.png">
+<link rel="stylesheet" href="commun/style.css">
+</head>
+<body data-branche="droit" class="page-index">
+
+<header class="index-hero">
+  <div class="sur">Tout le programme d'Économie &amp; Droit · Maturité professionnelle</div>
+  <h1><span class="emoji" aria-hidden="true">😊</span> <span class="titre-degrade">L'économie, c'est ma vie !</span> <span class="emoji" aria-hidden="true">😊</span></h1>
+  <div class="recherche">
+    <input type="search" id="q" placeholder="Rechercher un thème, un mot-clé…" aria-label="Rechercher">
+    <div class="filtres" id="filtres" aria-label="Filtrer par domaine"></div>
+  </div>
+</header>
+
+<main class="index-corps" id="liste"></main>
+
+<footer class="pied">Économie &amp; Droit · Maturité professionnelle</footer>
+
+<script src="commun/onglets.js"></script>
+<script src="catalogue.js"></script>
+<script>
+(function () {
+  "use strict";
+  const { annees, domaines, themes } = window.CATALOGUE;
+  const num = (t) => { const [v, c] = (t.code || "").split("-"); return { vol: +v || "", chap: +c || "" }; };
+  const domaine = (id) => domaines.find((d) => d.id === id) || { nom: id, couleur: "var(--accent)" };
+  const liste = document.getElementById("liste");
+  const champ = document.getElementById("q");
+  const filtres = document.getElementById("filtres");
+  let domaineActif = null;
+
+  // Les scores ne sont plus enregistrés : on efface ceux des anciennes versions
+  try { Object.keys(localStorage).filter((k) => k.startsWith("cours:score:")).forEach((k) => localStorage.removeItem(k)); } catch (e) { /* rien */ }
+  const sansAccents = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+  // Filtres par domaine
+  [{ id: null, nom: "Tous" }, ...domaines].forEach((d) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    if (d.couleur) b.style.setProperty("--c", d.couleur);
+    b.textContent = d.nom;
+    b.setAttribute("aria-pressed", d.id === domaineActif ? "true" : "false");
+    b.onclick = () => {
+      domaineActif = d.id;
+      [...filtres.children].forEach((x, i) => x.setAttribute("aria-pressed", ([null, ...domaines.map((y) => y.id)][i] === domaineActif) ? "true" : "false"));
+      rendre();
+    };
+    filtres.appendChild(b);
+  });
+
+  function rendre() {
+    const q = sansAccents(champ.value.trim());
+    liste.innerHTML = "";
+    let total = 0;
+    annees.forEach((an) => {
+      const items = themes
+        .filter((t) => t.annee === an.id)
+        .filter((t) => !domaineActif || t.domaine === domaineActif)
+        .filter((t) => !q || sansAccents(`${t.titre} ${t.resume || ""} ${t.code} chapitre ${num(t).chap} ${domaine(t.domaine).nom}`).includes(q));
+      if (!items.length) return;
+      total += items.length;
+      const g = document.createElement("section");
+      g.className = "groupe";
+      const prets = items.filter((t) => t.pret !== false).length;
+      g.innerHTML = `<div class="groupe-tete"><span class="puce"></span><h2>${an.nom}</h2><span class="nb">${items.length} chapitre${items.length > 1 ? "s" : ""} · ${prets ? `${prets} disponible${prets > 1 ? "s" : ""}` : "à venir"}</span></div>`;
+      const grille = document.createElement("div");
+      grille.className = "cartes-themes";
+      items.forEach((t) => {
+        const base = `themes/${t.dossier}/`;
+        const carte = document.createElement("article");
+        carte.className = "theme" + (t.pret === false ? " bientot" : "");
+        carte.dataset.branche = t.domaine;
+        carte.innerHTML = `
+          <div class="theme-haut">
+            <span class="chap">Vol. ${num(t).vol} · Chapitre <strong>${num(t).chap}</strong></span>
+          </div>
+          <div class="theme-bas">
+            <h3>${t.titre}</h3>
+            ${t.resume ? `<p>${t.resume}</p>` : ""}
+            <div class="liens">${t.pret === false
+              ? '<span class="bouton secondaire" style="cursor:default">Bientôt disponible</span>'
+              : `${t.apprentissage ? `<a class="bouton secondaire bouton-app" href="${base}theorie.html?mode=apprentissage">Apprentissage</a>` : ""}<a class="bouton secondaire" href="${base}theorie.html">Théorie</a><a class="bouton" href="${base}test.html" data-onglet>Entraînement</a>`}</div>
+          </div>`;
+        grille.appendChild(carte);
+      });
+      g.appendChild(grille);
+      liste.appendChild(g);
+    });
+    if (!total) liste.innerHTML = '<p class="vide">Aucun thème ne correspond à cette recherche.</p>';
+  }
+  champ.addEventListener("input", rendre);
+  rendre();
+})();
+</script>
+</body>
+</html>
