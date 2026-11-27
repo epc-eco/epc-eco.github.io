@@ -35,4 +35,10 @@
   });
 
   window.Onglets = { ouvrir };
+
+  // Mention « chapitre non relu » (voir commun/relu.js)
+  if (/\/themes\//.test(location.pathname)) {
+    const moi = document.currentScript && document.currentScript.src;
+    if (moi) { const r = document.createElement("script"); r.src = new URL("relu.js", moi).href; document.head.appendChild(r); }
+  }
 })();

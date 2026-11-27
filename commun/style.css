@@ -171,7 +171,7 @@ body.presentation .sommaire .sous a:hover { background: var(--surface-2); }
   border-left: 3px solid var(--accent); background: var(--surface-2);
   border-radius: 0 var(--rayon-s) var(--rayon-s) 0; padding: 16px 20px; margin: 22px 0;
 }
-.retenir::before { content: "À retenir"; display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin-bottom: 6px; }
+.retenir::before { content: "En bref"; display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin-bottom: 6px; }
 .retenir > :last-child { margin-bottom: 0; }
 
 .exemple { background: var(--surface); border: 1px dashed var(--ligne); border-radius: var(--rayon-s); padding: 14px 18px; margin: 14px 0; color: var(--texte-2); font-size: 16px; }
@@ -829,3 +829,12 @@ body.presentation.sans-sommaire .pres-flottant:hover { opacity: 1; }
 
 .theme-bas .liens { flex-wrap: wrap; }
 .theme-bas .liens .bouton-app { flex: 1 1 100%; color: var(--accent); border-color: var(--accent-ligne); }
+
+/* Chapitres non relus (relu: false dans catalogue.js) */
+.non-relu { color: #e9812b; font-weight: 800; margin-left: 3px; cursor: help; }
+.avertissement-relu { margin: 12px auto 0; font-size: 13px; color: var(--texte-3); text-align: center; }
+.non-relu-bandeau { background: rgba(0,0,0,.32) !important; }
+.non-relu-page { max-width: 820px; margin: 14px auto 0; padding: 0 16px; font-size: 13.5px; color: var(--texte-3); text-align: center; }
+body.presentation .non-relu-bandeau { display: none; }
+.index-hero .avertissement-relu { font-size: 13.5px; line-height: 1.4; max-width: 640px; }
+.theme-haut .non-relu { color: #fff; font-size: 1.3em; line-height: 0; vertical-align: -0.15em; }

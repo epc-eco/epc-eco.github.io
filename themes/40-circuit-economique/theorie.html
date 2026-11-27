@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ch. 40 · Circuit économique, prestation économique — Théorie · Économie & Droit</title>
+<link rel="icon" type="image/svg+xml" href="../../commun/favicon-ecopol.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../../commun/favicon-ecopol-32.png">
+<link rel="stylesheet" href="../../commun/style.css">
+</head>
+<body data-branche="ecopol">
+
+<header class="barre">
+  <a class="accueil" href="../../index.html">
+    <span class="pastille"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9H3z"/></svg></span>
+    Économie &amp; Droit
+  </a>
+  <span class="fil">Économie politique · Chapitre 40</span>
+  <nav class="onglets" aria-label="Pages du chapitre">
+    <a class="actif" href="theorie.html?mode=lecture" data-mode="lecture" aria-current="page">Théorie</a>
+    <a href="theorie.html?mode=apprentissage" data-mode="apprentissage">Apprentissage</a>
+    <a href="test.html" data-onglet>Entraînement</a>
+  </nav>
+  <div class="progression-lecture"></div>
+</header>
+
+<!-- Diapo de titre -->
+<div class="bandeau diapo diapo-titre">
+  <div class="bandeau-carte">
+    <div class="bandeau-tranche"><span>Économie &amp; Droit</span><span>Économie politique</span></div>
+    <div class="bandeau-texte">
+      <div class="sur">Chapitre 40</div>
+      <h1>Circuit économique, prestation économique</h1>
+      <p>Qui échange quoi avec qui ? Le circuit économique, puis le PIB : comment on le calcule et ce qu'il ne mesure pas.</p>
+      <div class="bandeau-meta"><span>9 parties</span><span>38 questions d'entraînement</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <aside class="sommaire">
+    <div class="pres-entete">
+      <span class="pres-chap">Chapitre 40</span>
+      <span class="pres-titre">Circuit économique, prestation économique</span>
+    </div>
+    <h4>Sommaire</h4>
+    <ol style="counter-reset: s -1">
+      <li><a href="#fil-rouge">Le fil rouge de la 3e année</a></li>
+      <li><a href="#circuit">Le circuit économique</a></li>
+      <li><a href="#agents">Les cinq agents économiques</a></li>
+      <li><a href="#elargi">Le circuit économique élargi</a></li>
+      <li><a href="#pib">Le PIB · produit intérieur brut</a></li>
+      <li><a href="#calcul">Le calcul du PIB</a></li>
+      <li><a href="#reel">Le PIB réel</a></li>
+      <li><a href="#comparer">Comparer les pays</a></li>
+      <li><a href="#defauts">Les défauts du PIB</a></li>
+      <li><a href="#alternatives">D'autres indicateurs</a></li>
+    </ol>
+    <div class="cta-test"><a class="bouton large" href="test.html" data-onglet>Je m'entraîne →</a></div>
+  </aside>
+
+  <main class="contenu">
+
+    <style>
+      /* Ch. 40-42 : flux animés et animation de l'effet de serre */
+      .flux { stroke-dasharray: 10 8; animation: flux-defile 1.1s linear infinite; }
+      @keyframes flux-defile { to { stroke-dashoffset: -18; } }
+      .onde { stroke-dasharray: 7 6; animation: flux-defile 0.9s linear infinite; }
+      .lent { animation-duration: 2.2s; }
+      .soleil-halo { animation: halo 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes halo { 50% { transform: scale(1.12); opacity: .55; } }
+      .molecule { animation: flotte 4s ease-in-out infinite; }
+      .molecule:nth-of-type(2n) { animation-delay: -1.3s; }
+      .molecule:nth-of-type(3n) { animation-delay: -2.6s; }
+      @keyframes flotte { 50% { transform: translateY(-6px); } }
+      body.presentation .frag.vu .monte, body.apprentissage .frag.vu .monte { animation: monte 1.6s ease-out both; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes monte { from { transform: scaleY(0); } }
+      body.presentation .frag.vu .glisse, body.apprentissage .frag.vu .glisse { animation: glisse 1.2s ease-out both; }
+      @keyframes glisse { from { transform: translateX(var(--dx, -60px)); opacity: .2; } }
+      body.presentation .frag.vu .glisse-y, body.apprentissage .frag.vu .glisse-y { animation: glisse-y 1.2s ease-out both; }
+      @keyframes glisse-y { from { transform: translateY(var(--dy, 40px)); opacity: .2; } }
+      @media (prefers-reduced-motion: reduce) { .flux, .onde, .soleil-halo, .molecule, .monte, .glisse, .glisse-y { animation: none !important; } }
+    </style>
+
+    <section class="section" id="fil-rouge">
+      <div class="diapo" data-titre="Où en sommes-nous ?">
+        <div class="section-tete"><span class="section-num">00</span><h2>Le fil rouge de la 3e année</h2></div>
+        <div class="grille grille-4"><div class="carte" style="border-color:var(--accent);background:var(--accent-fond);padding:12px 14px"><span class="etiquette">Ch. 40 · ici</span><h4>🔄 Circuit</h4><p>Qui échange quoi avec qui ?</p></div><a class="carte carte-lien" style="padding:12px 14px" href="../41-economie-de-marche/theorie.html"><span class="etiquette">Ch. 41</span><h4>⚖️ Marché</h4><p>Comment se forment les prix ?</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../42-ecologie-et-energie/theorie.html"><span class="etiquette">Ch. 42</span><h4>🌍 Écologie</h4><p>Les limites de la planète.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../43-desequilibres-monetaires/theorie.html"><span class="etiquette">Ch. 43</span><h4>💸 Monnaie</h4><p>Quand les prix se dérèglent.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../45-croissance/theorie.html"><span class="etiquette">Ch. 45</span><h4>🌱 Croissance</h4><p>La tendance à long terme.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../46-cycle-conjoncturel/theorie.html"><span class="etiquette">Ch. 46</span><h4>🌊 Conjoncture</h4><p>Les vagues à court terme.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../47-objectifs-politique-economique/theorie.html"><span class="etiquette">Ch. 47</span><h4>🎯 Objectifs</h4><p>Ce que l'État veut atteindre.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../48-politique-fiscale-et-monetaire/theorie.html"><span class="etiquette">Ch. 48</span><h4>🧰 Instruments</h4><p>Comment la BNS et l'État agissent.</p></a></div>
+        <div class="retenir frag"><p>Ce chapitre : la <b>carte</b> de l'économie. Ses cinq agents reviennent dans tous les chapitres suivants.</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== 1 ===================== -->
+    <section class="section" id="circuit">
+      <div class="diapo" data-titre="Définition">
+        <div class="section-tete"><span class="section-num">01</span><h2>Le circuit économique</h2></div>
+        <div class="definition">
+          <span class="etiquette">Définition</span>
+          Le circuit économique est un <b>schéma</b> qui représente les <b>échanges</b> entre les <b>agents économiques</b>.
+        </div>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🗺️</span><h4>Une carte</h4><p>Une représentation graphique, simplifiée, de l'économie.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">👥</span><h4>Les acteurs</h4><p>Les principaux agents qui font vivre l'économie.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🔄</span><h4>Les échanges</h4><p>Qui donne quoi à qui, et ce qu'il reçoit en retour.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3>Le circuit simple : ménages et entreprises</h3>
+        <figure class="schema">
+          <svg viewBox="0 0 760 320" role="img" aria-label="Circuit économique simple : les ménages fournissent leur travail aux entreprises et reçoivent des salaires ; les entreprises fournissent des biens et services et reçoivent le paiement des achats">
+<defs><marker id="mcr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker><marker id="mcm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#e9b44c"/></marker></defs>
+<rect x="40" y="115" width="190" height="90" rx="14" class="s-noeud"/><text x="135.0" y="156.0" text-anchor="middle" style="font-size:22px">🏭</text><text x="135.0" y="180.0" text-anchor="middle" class="s-texte" style="font-size:16px">Entreprises</text>
+<rect x="530" y="115" width="190" height="90" rx="14" class="s-noeud"/><text x="625.0" y="156.0" text-anchor="middle" style="font-size:22px">🏠</text><text x="625.0" y="180.0" text-anchor="middle" class="s-texte" style="font-size:16px">Ménages</text>
+<g class="frag"><path d="M530 135Q380 40 230 135" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mcr)"/><text x="380" y="72" text-anchor="middle" class="s-texte" style="font-size:13.5px;fill:#00a1bf">Travail</text><path d="M230 150Q380 100 530 150" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mcr)"/><text x="380" y="118" text-anchor="middle" class="s-texte" style="font-size:13.5px;fill:#00a1bf">Biens et services</text><text x="380" y="22" text-anchor="middle" class="s-texte-2" style="font-size:13px">flux réels</text></g>
+<g class="frag"><path d="M230 170Q380 220 530 170" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mcm)"/><text x="380" y="212" text-anchor="middle" class="s-texte" style="font-size:13.5px;fill:#e9b44c">Salaires</text><path d="M530 185Q380 280 230 185" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mcm)"/><text x="380" y="258" text-anchor="middle" class="s-texte" style="font-size:13.5px;fill:#e9b44c">Paiement des achats</text><text x="380" y="304" text-anchor="middle" class="s-texte-2" style="font-size:13px">flux monétaires</text></g>
+</svg>
+          <figcaption>À chaque flux réel correspond un flux monétaire de même valeur, dans le sens inverse.</figcaption>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="c2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 2 ===================== -->
+    <section class="section" id="agents">
+      <div class="diapo" data-titre="Qui sont-ils ?">
+        <div class="section-tete"><span class="section-num">02</span><h2>Les cinq agents économiques</h2></div>
+        <div class="grille grille-5">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏠</span><span class="etiquette">Ménages</span><p>Travaillent, consomment et épargnent.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏭</span><span class="etiquette">Entreprises</span><p>Produisent des biens et des services.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏛️</span><span class="etiquette">État</span><p>Prélève des impôts, offre des services collectifs.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏦</span><span class="etiquette">Banques</span><p>Récoltent l'épargne, accordent des crédits.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🌍</span><span class="etiquette">Étranger</span><p>Achète nos exportations, nous vend des importations.</p></div>
+        </div>
+        <div class="retenir frag"><p>On les retrouve dans toute la 3e année : la <b>BNS</b> et les banques (ch. 43 et 48), l'<b>État</b> (ch. 47), l'<b>étranger</b> (franc fort, ch. 47 et 48).</p></div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="a2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 3 ===================== -->
+    <section class="section" id="elargi">
+      <div class="diapo" data-titre="Le schéma complet">
+        <div class="section-tete"><span class="section-num">03</span><h2>Le circuit économique élargi</h2></div>
+        <figure class="schema">
+          <svg viewBox="0 0 760 460" role="img" aria-label="Circuit économique élargi : entreprises et ménages échangent travail, salaires, biens et paiements ; les banques collectent l'épargne et accordent des crédits contre intérêts ; l'État prélève des impôts et fournit services collectifs et sécurité sociale ; l'étranger achète nos exportations et nous vend des importations">
+<defs><marker id="mer" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker><marker id="mem" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#e9b44c"/></marker></defs>
+<rect x="40" y="190" width="170" height="80" rx="14" class="s-noeud"/><text x="125.0" y="226.0" text-anchor="middle" style="font-size:22px">🏭</text><text x="125.0" y="250.0" text-anchor="middle" class="s-texte" style="font-size:16px">Entreprises</text>
+<rect x="550" y="190" width="170" height="80" rx="14" class="s-noeud"/><text x="635.0" y="226.0" text-anchor="middle" style="font-size:22px">🏠</text><text x="635.0" y="250.0" text-anchor="middle" class="s-texte" style="font-size:16px">Ménages</text>
+<g class="frag"><path d="M550 200H210" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><text x="380" y="197" text-anchor="middle" class="s-texte" style="font-size:13px;fill:#00a1bf">travail</text><path d="M210 222H550" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="380" y="219" text-anchor="middle" class="s-texte" style="font-size:13px;fill:#e9b44c">salaires</text><path d="M210 244H550" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><text x="380" y="241" text-anchor="middle" class="s-texte" style="font-size:13px;fill:#00a1bf">biens et services</text><path d="M550 266H210" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="380" y="263" text-anchor="middle" class="s-texte" style="font-size:13px;fill:#e9b44c">paiement des achats</text></g>
+<g class="frag"><rect x="295" y="18" width="170" height="70" rx="14" class="s-noeud"/><text x="380.0" y="49.0" text-anchor="middle" style="font-size:22px">🏦</text><text x="380.0" y="73.0" text-anchor="middle" class="s-texte" style="font-size:16px">Banques</text><path d="M660 190L450 88" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="561" y="130" text-anchor="start" class="s-texte" style="font-size:13px;fill:#e9b44c">épargne</text><path d="M420 88L575 190" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="490" y="155" text-anchor="end" class="s-texte" style="font-size:13px;fill:#e9b44c">intérêts</text><path d="M310 88L100 190" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="199" y="130" text-anchor="end" class="s-texte" style="font-size:13px;fill:#e9b44c">crédits</text><path d="M185 190L340 88" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="270" y="155" text-anchor="start" class="s-texte" style="font-size:13px;fill:#e9b44c">intérêts</text></g>
+<g class="frag"><rect x="295" y="372" width="170" height="70" rx="14" class="s-noeud"/><text x="380.0" y="403.0" text-anchor="middle" style="font-size:22px">🏛️</text><text x="380.0" y="427.0" text-anchor="middle" class="s-texte" style="font-size:16px">État</text><path d="M575 270L420 372" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="490" y="313" text-anchor="end" class="s-texte" style="font-size:13px;fill:#e9b44c">impôts</text><path d="M465 442L680 270" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><text x="582" y="372" text-anchor="start" class="s-texte" style="font-size:13px;fill:#00a1bf">services,</text><text x="582" y="387" text-anchor="start" class="s-texte" style="font-size:13px;fill:#00a1bf">sécurité sociale</text><path d="M185 270L340 372" fill="none" style="stroke:#e9b44c" stroke-width="3" class="flux" marker-end="url(#mem)"/><text x="270" y="313" text-anchor="start" class="s-texte" style="font-size:13px;fill:#e9b44c">impôts</text><path d="M295 442L150 270" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><text x="218" y="379" text-anchor="end" class="s-texte" style="font-size:13px;fill:#00a1bf">services</text><text x="218" y="394" text-anchor="end" class="s-texte" style="font-size:13px;fill:#00a1bf">collectifs</text></g>
+<g class="frag"><rect x="10" y="372" width="115" height="70" rx="14" class="s-noeud"/><text x="67.5" y="403.0" text-anchor="middle" style="font-size:22px">🌍</text><text x="67.5" y="427.0" text-anchor="middle" class="s-texte" style="font-size:16px">Étranger</text><path d="M50 270V370" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><path d="M95 372V272" fill="none" style="stroke:#00a1bf" stroke-width="3" class="flux" marker-end="url(#mer)"/><text transform="translate(40 322) rotate(-90)" text-anchor="middle" class="s-texte" style="font-size:12.5px;fill:#00a1bf">exportations</text><text transform="translate(113 322) rotate(-90)" text-anchor="middle" class="s-texte" style="font-size:12.5px;fill:#00a1bf">importations</text></g>
+<rect x="560" y="420" width="16" height="4" style="fill:#00a1bf"/><text x="582" y="426" class="s-texte-2" style="font-size:12.5px">flux réels</text><rect x="560" y="438" width="16" height="4" style="fill:#e9b44c"/><text x="582" y="444" class="s-texte-2" style="font-size:12.5px">flux monétaires</text>
+</svg>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3>Lire le circuit élargi</h3>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏦</span><span class="etiquette">Banques</span><p>Les ménages déposent leur <b>épargne</b> ; les banques la prêtent aux entreprises sous forme de <b>crédits</b>. Les deux rapportent des <b>intérêts</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏛️</span><span class="etiquette">État</span><p>Ménages et entreprises paient des <b>impôts</b> ; l'État fournit des <b>services collectifs</b> (écoles, routes, police) et la <b>sécurité sociale</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🌍</span><span class="etiquette">Étranger</span><p>Les entreprises <b>exportent</b> et <b>importent</b> des biens et des services.</p></div>
+        </div>
+        <div class="exemple frag">Si les ménages consomment moins (récession, ch. 46), tous les flux ralentissent : moins de ventes, moins de salaires, moins d'impôts.</div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="e1"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 4 ===================== -->
+    <section class="section" id="pib">
+      <div class="diapo" data-titre="PIB et PNB">
+        <div class="section-tete"><span class="section-num">04</span><h2>Le PIB · produit intérieur brut</h2></div>
+        <div class="definition">
+          <span class="etiquette">Définition</span>
+          La <b>valeur</b> des biens et services <b>produits dans un pays</b> en une année. On le calcule grâce à la <b>comptabilité nationale</b>.
+        </div>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🇨🇭 ⬅️ 🏭🏭</span><span class="etiquette">PIB · produit « dans » le pays</span><p>Les entreprises <b>suisses et étrangères</b> situées <b>en Suisse</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🇨🇭 ➡️ 🌍</span><span class="etiquette">PNB · produit « par » le pays</span><p>Les entreprises <b>suisses</b>, <b>en Suisse et à l'étranger</b>.</p></div>
+        </div>
+        <p class="frag" style="color:var(--texte-2)">Aujourd'hui, on parle plutôt de <b>RNB</b> (revenu national brut) que de PNB : voir le chapitre 45.</p>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="p2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 5 ===================== -->
+    <section class="section" id="calcul">
+      <div class="diapo" data-titre="Trois façons de calculer">
+        <div class="section-tete"><span class="section-num">05</span><h2>Le calcul du PIB</h2></div>
+        <p class="chapeau">On peut calculer le PIB de trois façons. Elles donnent <b>le même résultat</b> : c'est le circuit économique !</p>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏭</span><span class="etiquette">Production</span><p>Ce qui est <b>produit</b> : la valeur ajoutée.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">💰</span><span class="etiquette">Revenus</span><p>Ce qui est <b>gagné</b> : salaires, bénéfices…</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🛒</span><span class="etiquette">Dépense</span><p>Ce qui est <b>dépensé</b> : consommation, investissements…</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="valeur-ajoutee">La valeur ajoutée : du blé au pain</h3>
+        <div class="tableau-wrap">
+          <table class="tableau">
+            <thead><tr><th>Producteur</th><th>Il vend</th><th>Il a acheté</th><th>Valeur ajoutée</th></tr></thead>
+            <tbody>
+              <tr class="frag"><th>🌾 Agriculteur</th><td>du blé : 100 fr.</td><td>—</td><td><b>100 fr.</b></td></tr>
+              <tr class="frag"><th>🏭 Meunier</th><td>de la farine : 250 fr.</td><td>le blé : 100 fr.</td><td><b>150 fr.</b></td></tr>
+              <tr class="frag"><th>🥖 Boulanger</th><td>du pain : 600 fr.</td><td>la farine : 250 fr.</td><td><b>350 fr.</b></td></tr>
+              <tr class="frag"><th>Total</th><td></td><td></td><td><b>600 fr.</b> = le prix du pain</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="retenir frag"><p>On n'additionne pas les ventes (950 fr.) : le blé serait compté trois fois. On additionne la <b>valeur ajoutée</b> : ventes − <b>consommations intermédiaires</b>.</p></div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="v2"></div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="approches">Les trois approches en détail</h3>
+        <div class="grille grille-3">
+          <div class="carte frag"><span class="etiquette">Par la production</span><p>Production<br>− consommations intermédiaires<br>+ impôts sur les produits<br>− subventions sur les produits<br>= <b>PIB</b></p><p style="margin-top:8px;color:var(--accent);font-weight:700">En Suisse, la valeur ajoutée vaut environ 50 % de la production.</p></div>
+          <div class="carte frag"><span class="etiquette">Par les revenus</span><p>Salaires des employés<br>+ bénéfices nets des entrepreneurs<br>+ amortissements<br>+ impôts (État)<br>= <b>PIB</b></p><p style="margin-top:8px;color:var(--accent);font-weight:700">Environ 60 % du PIB va aux salariés.</p></div>
+          <div class="carte frag"><span class="etiquette">Par la dépense</span><p>Consommation des ménages<br>+ dépenses de l'État<br>+ investissements<br>+ exportations − importations<br>= <b>PIB</b></p><p style="margin-top:8px;color:var(--accent);font-weight:700">Plus de 50 % viennent des ménages.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="v6"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 6 ===================== -->
+    <section class="section" id="reel">
+      <div class="diapo" data-titre="Nominal ou réel ?">
+        <div class="section-tete"><span class="section-num">06</span><h2>Le PIB réel</h2></div>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">😃</span><span class="etiquette">C'est bon ça !</span><p>Le PIB en francs a augmenté de 4 %.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🤔</span><span class="etiquette">Peut-être pas tant que ça…</span><p>Le PIB additionne des <b>prix</b>. Si les prix ont monté de 3 %, on n'a produit que 1 % de plus.</p></div>
+        </div>
+        <div class="formule frag">PIB réel ≈ PIB nominal − inflation</div>
+        <div class="retenir frag"><p><b>Croissance nominale</b> : en francs courants. <b>Croissance réelle</b> : sans l'effet des prix. Suite au chapitre 45 ; l'inflation au chapitre 43.</p></div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="r2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 7 ===================== -->
+    <section class="section" id="comparer">
+      <div class="diapo" data-titre="Le même étalon">
+        <div class="section-tete"><span class="section-num">07</span><h2>Comparer les pays</h2></div>
+        <p class="chapeau">Pour comparer, il faut une <b>base commune</b> : on convertit tout en <b>dollars</b>. Difficulté : le <b>taux de change</b> varie.</p>
+        <div class="tableau-wrap">
+          <table class="tableau">
+            <thead><tr><th>2024</th><th>PIB total</th><th>PIB par habitant</th></tr></thead>
+            <tbody>
+              <tr class="frag"><th>🇺🇸 États-Unis</th><td><b>≈ 28 750 milliards $</b> · 1er</td><td>≈ 85 000 $</td></tr>
+              <tr class="frag"><th>🇨🇳 Chine</th><td><b>≈ 18 740 milliards $</b> · 2e</td><td>≈ 13 000 $</td></tr>
+              <tr class="frag"><th>🇨🇭 Suisse</th><td>≈ 940 milliards $ · autour du 20e rang</td><td><b>≈ 104 000 $</b> · parmi les 5 premiers</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="color:var(--texte-3);font-size:14px">Source : Banque mondiale, PIB en dollars courants (2024).</p>
+      </div>
+
+      <div class="diapo">
+        <h3>Trois classements, trois histoires</h3>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏋️</span><span class="etiquette">PIB total</span><p>La <b>puissance</b> économique : les grands pays en tête.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">👤</span><span class="etiquette">PIB par habitant</span><p>La richesse <b>moyenne</b> : les petits pays riches montent.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🛒</span><span class="etiquette">PIB par habitant en PPA</span><p>En <b>parité de pouvoir d'achat</b> : on tient compte des prix de chaque pays.</p></div>
+        </div>
+        <div class="exemple frag">Avec 100 dollars, on achète beaucoup plus en Inde qu'en Suisse. La PPA corrige cette différence : l'avance des pays chers, comme la Suisse, se réduit.</div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="k1"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 8 ===================== -->
+    <section class="section" id="defauts">
+      <div class="diapo" data-titre="Ce que le PIB oublie">
+        <div class="section-tete"><span class="section-num">08</span><h2>Les défauts du PIB</h2></div>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">📉❓</span><span class="etiquette perte">Des statistiques fragiles</span><p>Manque de moyens ; envie de paraître pauvre pour recevoir de l'aide ; ou de paraître puissant.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">⚖️</span><span class="etiquette perte">La répartition</span><p>Une moyenne élevée peut cacher de grandes <b>inégalités</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🕶️</span><span class="etiquette perte">L'économie souterraine</span><p>Bénévolat, travail non payé (ménage, enfants), travail au noir et activités illégales.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🚑</span><span class="etiquette perte">Des dépenses non souhaitées</span><p>Lutte contre la pollution, contre la criminalité, guerres : elles <b>augmentent</b> le PIB.</p></div>
+        </div>
+        <p class="frag" style="color:var(--texte-2)">Et il ne tient pas compte du <b>développement durable</b> (ch. 42).</p>
+      </div>
+
+      <div class="diapo">
+        <h3>Bref, le PIB…</h3>
+        <div class="grille grille-2">
+          <div class="carte frag"><span class="etiquette gain">… mesure</span><ul><li>la <b>production</b> d'un pays</li><li>sa <b>puissance</b> économique</li></ul></div>
+          <div class="carte frag"><span class="etiquette perte">… ne renseigne pas sur</span><ul><li>le bien-être</li><li>l'éducation</li><li>les droits humains et les libertés</li><li>la qualité de l'environnement</li></ul></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="d2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 9 ===================== -->
+    <section class="section" id="alternatives">
+      <div class="diapo" data-titre="L'IDH">
+        <div class="section-tete"><span class="section-num">09</span><h2>D'autres indicateurs</h2></div>
+        <div class="definition">
+          <span class="etiquette">IDH · Indice de développement humain (ONU)</span>
+          Il combine trois dimensions : la <b>santé</b> (espérance de vie), l'<b>éducation</b> (durée de scolarisation) et le <b>niveau de vie</b> (revenu par habitant en PPA). Il va de <b>0</b> (faible) à <b>1</b> (élevé).
+        </div>
+        <div class="grille grille-3">
+          <div class="carte frag"><span class="etiquette">1re · Islande</span><div class="chiffre-cle"><span class="n">0,972</span></div></div>
+          <div class="carte frag"><span class="etiquette">2e · Suisse et Norvège</span><div class="chiffre-cle"><span class="n">0,970</span></div></div>
+          <div class="carte frag"><span class="etiquette">Monde</span><div class="chiffre-cle"><span class="n">0,756</span></div><p>contre 0,608 en 1990</p></div>
+        </div>
+        <p style="color:var(--texte-3);font-size:14px">Source : PNUD, Rapport sur le développement humain 2025 (données 2023).</p>
+      </div>
+
+      <div class="diapo">
+        <h3 id="ecologiques">Des indicateurs écologiques</h3>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">👣</span><span class="etiquette">Empreinte écologique</span><p>Combien de <b>planètes</b> faudrait-il si tout le monde vivait comme moi ?</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">📅</span><span class="etiquette">Jour du dépassement</span><p>Le jour où l'humanité a consommé ce que la Terre <b>renouvelle</b> en un an.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">💎</span><span class="etiquette">Richesse globale</span><p>Elle tient compte de l'<b>utilisation des ressources</b> naturelles.</p></div>
+        </div>
+        <div class="grille grille-2">
+          <div class="carte frag"><span class="etiquette">Monde 2026</span><div class="chiffre-cle"><span class="n">30 juillet</span></div><p>≈ 1,7 planète utilisée</p></div>
+          <div class="carte frag"><span class="etiquette">Suisse 2026</span><div class="chiffre-cle"><span class="n">11 mai</span></div><p>Si tout le monde vivait comme en Suisse, il faudrait près de 3 planètes.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="hpi">Le Happy Planet Index</h3>
+        <div class="formule frag">Indice de la planète heureuse ≈ (espérance de vie × bien-être) ÷ empreinte écologique<small>Le bien-être est mesuré par sondage, de 0 à 10.</small></div>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🌴</span><span class="etiquette">En tête</span><p>Le <b>Vanuatu</b> ou le Costa Rica : vies longues et heureuses, petite empreinte. <b>Produire plus</b> n'est pas <b>vivre mieux</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🇨🇭</span><span class="etiquette">La Suisse</span><p><b>6e sur 147</b> pays (édition 2026), parmi les meilleurs pays riches.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="i3"></div>
+      </div>
+    </section>
+
+    <div class="diapo">
+      <h3>Objectif du chapitre</h3>
+      <div class="carte frag"><span class="etiquette">Objectif</span><p>Je décris les rapports fondamentaux de l'économie à l'aide du <b>circuit élargi</b> : ménages, entreprises, État, secteur financier, étranger ; le <b>PIB</b> et sa composition selon l'approche (consommation privée et publique, investissements, balance commerciale) ; la différence entre croissance <b>réelle</b> et croissance <b>nominale</b> du PIB.</p></div>
+    </div>
+
+    <div class="diapo diapo-fin">
+      <div class="suite">
+        <div>
+          <h3>Avons-nous tout vu ?</h3>
+          <p>Passez à l'entraînement : 38 questions, avec la correction après chaque réponse.</p>
+        </div>
+        <a class="bouton" href="test.html" data-onglet>Commencer l'entraînement →</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../commun/onglets.js"></script>
+<script src="../../commun/quiz.js"></script>
+<script src="questions.js"></script>
+<script src="../../commun/theorie.js"></script>
+<!-- Mode présentation : fichier de l'enseignant, absent du site publié -->
+<script src="../../commun/presentation.js"></script>
+</body>
+</html>

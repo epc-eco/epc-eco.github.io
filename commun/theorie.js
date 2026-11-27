@@ -375,6 +375,8 @@
       document.querySelectorAll(".frag").forEach((f) => f.classList.add("vu"));
     },
   });
+  // Object.assign copie la valeur de « idx » une seule fois : on la redéfinit en lecture dynamique
+  Object.defineProperty(T, "idx", { get: () => idx, configurable: true });
 
   /* ---------- Mode lecture : barre de lecture et sommaire actif ---------- */
   const barre = document.querySelector(".progression-lecture");

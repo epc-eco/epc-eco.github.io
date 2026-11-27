@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ch. 41 · Économie de marché — Théorie · Économie & Droit</title>
+<link rel="icon" type="image/svg+xml" href="../../commun/favicon-ecopol.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../../commun/favicon-ecopol-32.png">
+<link rel="stylesheet" href="../../commun/style.css">
+</head>
+<body data-branche="ecopol">
+
+<header class="barre">
+  <a class="accueil" href="../../index.html">
+    <span class="pastille"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9H3z"/></svg></span>
+    Économie &amp; Droit
+  </a>
+  <span class="fil">Économie politique · Chapitre 41</span>
+  <nav class="onglets" aria-label="Pages du chapitre">
+    <a class="actif" href="theorie.html?mode=lecture" data-mode="lecture" aria-current="page">Théorie</a>
+    <a href="theorie.html?mode=apprentissage" data-mode="apprentissage">Apprentissage</a>
+    <a href="test.html" data-onglet>Entraînement</a>
+  </nav>
+  <div class="progression-lecture"></div>
+</header>
+
+<!-- Diapo de titre -->
+<div class="bandeau diapo diapo-titre">
+  <div class="bandeau-carte">
+    <div class="bandeau-tranche"><span>Économie &amp; Droit</span><span>Économie politique</span></div>
+    <div class="bandeau-texte">
+      <div class="sur">Chapitre 41</div>
+      <h1>Économie de marché</h1>
+      <p>L'offre, la demande et le prix : comment un marché fonctionne… et quand l'État s'en mêle.</p>
+      <div class="bandeau-meta"><span>6 parties</span><span>38 questions d'entraînement</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <aside class="sommaire">
+    <div class="pres-entete">
+      <span class="pres-chap">Chapitre 41</span>
+      <span class="pres-titre">Économie de marché</span>
+    </div>
+    <h4>Sommaire</h4>
+    <ol style="counter-reset: s -1">
+      <li><a href="#fil-rouge">Le fil rouge de la 3e année</a></li>
+      <li><a href="#definition">L'économie de marché</a></li>
+      <li><a href="#demande">La demande</a></li>
+      <li><a href="#offre">L'offre</a></li>
+      <li><a href="#equilibre">L'équilibre du marché</a></li>
+      <li><a href="#formes">Les formes de marché</a></li>
+      <li><a href="#controle">Quand l'État contrôle les prix</a></li>
+    </ol>
+    <div class="cta-test"><a class="bouton large" href="test.html" data-onglet>Je m'entraîne →</a></div>
+  </aside>
+
+  <main class="contenu">
+
+    <style>
+      /* Ch. 40-42 : flux animés et animation de l'effet de serre */
+      .flux { stroke-dasharray: 10 8; animation: flux-defile 1.1s linear infinite; }
+      @keyframes flux-defile { to { stroke-dashoffset: -18; } }
+      .onde { stroke-dasharray: 7 6; animation: flux-defile 0.9s linear infinite; }
+      .lent { animation-duration: 2.2s; }
+      .soleil-halo { animation: halo 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes halo { 50% { transform: scale(1.12); opacity: .55; } }
+      .molecule { animation: flotte 4s ease-in-out infinite; }
+      .molecule:nth-of-type(2n) { animation-delay: -1.3s; }
+      .molecule:nth-of-type(3n) { animation-delay: -2.6s; }
+      @keyframes flotte { 50% { transform: translateY(-6px); } }
+      body.presentation .frag.vu .monte, body.apprentissage .frag.vu .monte { animation: monte 1.6s ease-out both; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes monte { from { transform: scaleY(0); } }
+      body.presentation .frag.vu .glisse, body.apprentissage .frag.vu .glisse { animation: glisse 1.2s ease-out both; }
+      @keyframes glisse { from { transform: translateX(var(--dx, -60px)); opacity: .2; } }
+      body.presentation .frag.vu .glisse-y, body.apprentissage .frag.vu .glisse-y { animation: glisse-y 1.2s ease-out both; }
+      @keyframes glisse-y { from { transform: translateY(var(--dy, 40px)); opacity: .2; } }
+      @media (prefers-reduced-motion: reduce) { .flux, .onde, .soleil-halo, .molecule, .monte, .glisse, .glisse-y { animation: none !important; } }
+    </style>
+
+    <section class="section" id="fil-rouge">
+      <div class="diapo" data-titre="Où en sommes-nous ?">
+        <div class="section-tete"><span class="section-num">00</span><h2>Le fil rouge de la 3e année</h2></div>
+        <div class="grille grille-4"><a class="carte carte-lien" style="padding:12px 14px" href="../40-circuit-economique/theorie.html"><span class="etiquette">Ch. 40</span><h4>🔄 Circuit</h4><p>Qui échange quoi avec qui ?</p></a><div class="carte" style="border-color:var(--accent);background:var(--accent-fond);padding:12px 14px"><span class="etiquette">Ch. 41 · ici</span><h4>⚖️ Marché</h4><p>Comment se forment les prix ?</p></div><a class="carte carte-lien" style="padding:12px 14px" href="../42-ecologie-et-energie/theorie.html"><span class="etiquette">Ch. 42</span><h4>🌍 Écologie</h4><p>Les limites de la planète.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../43-desequilibres-monetaires/theorie.html"><span class="etiquette">Ch. 43</span><h4>💸 Monnaie</h4><p>Quand les prix se dérèglent.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../45-croissance/theorie.html"><span class="etiquette">Ch. 45</span><h4>🌱 Croissance</h4><p>La tendance à long terme.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../46-cycle-conjoncturel/theorie.html"><span class="etiquette">Ch. 46</span><h4>🌊 Conjoncture</h4><p>Les vagues à court terme.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../47-objectifs-politique-economique/theorie.html"><span class="etiquette">Ch. 47</span><h4>🎯 Objectifs</h4><p>Ce que l'État veut atteindre.</p></a><a class="carte carte-lien" style="padding:12px 14px" href="../48-politique-fiscale-et-monetaire/theorie.html"><span class="etiquette">Ch. 48</span><h4>🧰 Instruments</h4><p>Comment la BNS et l'État agissent.</p></a></div>
+        <div class="retenir frag"><p>Ce chapitre : le <b>moteur</b> du marché. L'offre et la demande expliquent aussi l'inflation (ch. 43).</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== 1 ===================== -->
+    <section class="section" id="definition">
+      <div class="diapo" data-titre="Définitions">
+        <div class="section-tete"><span class="section-num">01</span><h2>L'économie de marché</h2></div>
+        <div class="definition">
+          <span class="etiquette">Économie de marché (ou libérale)</span>
+          Un système économique dans lequel les <b>prix</b> se forment selon l'<b>offre</b> et la <b>demande</b>.
+        </div>
+        <div class="definition frag">
+          <span class="etiquette">Marché</span>
+          Un lieu, <b>physique ou virtuel</b>, où se rencontrent des acheteurs (la demande) et des vendeurs (l'offre).
+        </div>
+        <ul class="puces-etapes puces-grandes">
+          <li class="frag">🧺 le marché de Fribourg le samedi</li><li class="frag">💻 une plateforme d'annonces en ligne</li><li class="frag">📈 la bourse</li>
+        </ul>
+      </div>
+
+      <div class="diapo">
+        <h3>Pure… ou presque</h3>
+        <div class="mot-cle frag">Pure ? Nulle part !</div>
+        <div class="grille grille-2">
+          <div class="carte frag"><span class="etiquette">L'économie de marché pure</span><p>N'existe dans <b>aucun pays</b> : partout, l'État intervient (impôts, lois, prix contrôlés, aides).</p></div>
+          <div class="carte frag"><span class="etiquette">La bourse</span><p>C'est l'endroit où les prix se fixent le plus selon ses principes : chaque prix est la rencontre d'une offre et d'une demande.</p></div>
+        </div>
+        <div class="retenir frag"><p>Faut-il laisser faire le marché ? C'est le débat entre <b>libéraux</b> et <b>keynésiens</b> (ch. 46).</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== 2 ===================== -->
+    <section class="section" id="demande">
+      <div class="diapo" data-titre="La courbe de demande">
+        <div class="section-tete"><span class="section-num">02</span><h2>La demande</h2></div>
+        <div class="definition">
+          <span class="etiquette">Définition</span>
+          La <b>quantité</b> de biens que les consommateurs sont prêts à <b>acheter</b> à un prix donné.
+        </div>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Courbe de demande : plus le prix est bas, plus la quantité demandée est élevée ; une baisse de prix fait passer du point A au point B">
+<defs><marker id="mdb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mdba" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mdbr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mdbb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M80 300V22M80 300H478" class="s-fleche" marker-end="url(#mdb)"/><text x="88" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="476" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M118 66L422 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="430" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<g class="frag"><path d="M80 118H194V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="194" cy="118" r="6" style="fill:#00a1bf"/><text x="204" y="108" text-anchor="start" class="s-texte" style="font-size:14px">A</text><text x="72" y="122" text-anchor="end" class="s-texte-2" style="font-size:13px">cher</text><text x="194" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">peu</text></g>
+<g class="frag"><path d="M80 222H346V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="346" cy="222" r="6" style="fill:#00a1bf"/><text x="356" y="212" text-anchor="start" class="s-texte" style="font-size:14px">B</text><text x="72" y="226" text-anchor="end" class="s-texte-2" style="font-size:13px">bon marché</text><text x="346" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">beaucoup</text></g>
+<g class="frag"><path d="M209 139L323 217" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#mdba)"/></g>
+<g class="frag"><text x="520" y="120" text-anchor="start" class="s-texte" style="font-size:16px">Le prix baisse…</text><text x="520" y="145" text-anchor="start" class="s-texte" style="font-size:16px">… la quantité demandée</text><text x="520" y="170" text-anchor="start" class="s-texte" style="font-size:16px">augmente.</text><text x="520" y="215" text-anchor="start" class="s-texte-2" style="font-size:14px">On se déplace le long</text><text x="520" y="235" text-anchor="start" class="s-texte-2" style="font-size:14px">de la courbe : de A vers B.</text></g>
+</svg>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3 id="deplacement-demande">Quand toute la courbe se déplace</h3>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Déplacement de la courbe de demande : vers la droite (d′) s'il y a plus de demande au même prix, vers la gauche (d″) s'il y en a moins">
+<defs><marker id="mdd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mdda" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mddr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mddb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M80 300V22M80 300H478" class="s-fleche" marker-end="url(#mdd)"/><text x="88" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="476" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M137 66L365 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="373" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<path d="M80 170H445" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><text x="72" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">p</text>
+<g class="frag"><g class="glisse" style="--dx:-90px"><path d="M213 66L441 274" style="stroke:var(--accent)" stroke-width="3" stroke-linecap="round"/><text x="449" y="279" class="s-texte" style="font-size:15px;fill:var(--accent)">d′</text></g><path d="M266 170L331 170" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#mdda)"/><text x="520" y="110" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--accent)">d → d′ : plus de demande</text><text x="520" y="130" text-anchor="start" class="s-texte-2" style="font-size:13px">au même prix</text></g>
+<g class="frag"><g class="glisse" style="--dx:90px"><path d="M80 83L289 274" style="stroke:var(--faux)" stroke-width="3" stroke-linecap="round"/><text x="297" y="279" class="s-texte" style="font-size:15px;fill:var(--faux)">d″</text></g><path d="M243 170L186 170" style="stroke:var(--faux)" stroke-width="2.5" marker-end="url(#mddr)"/><text x="520" y="200" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--faux)">d → d″ : moins de demande</text><text x="520" y="220" text-anchor="start" class="s-texte-2" style="font-size:13px">au même prix</text></g>
+</svg>
+          <figcaption>Le prix ne change pas, mais on demande plus (ou moins) : toute la courbe se déplace.</figcaption>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3>Pourquoi la demande se déplace-t-elle ?</h3>
+        <div class="tableau-wrap">
+          <table class="tableau">
+            <thead><tr><th>Plus de demande (d → d′)</th><th>Moins de demande (d → d″)</th></tr></thead>
+            <tbody>
+              <tr class="frag"><td>Le bien devient plus utile ou à la mode</td><td>Le bien est moins utile, démodé</td></tr>
+              <tr class="frag"><td>Les <b>substituts</b> deviennent plus chers (le beurre, si l'on achète de la margarine)</td><td>Les substituts deviennent moins chers</td></tr>
+              <tr class="frag"><td>Les biens <b>complémentaires</b> deviennent moins chers (l'imprimante, pour l'encre)</td><td>Les biens complémentaires deviennent plus chers</td></tr>
+              <tr class="frag"><td>Le revenu augmente</td><td>Le revenu baisse</td></tr>
+              <tr class="frag"><td>La population augmente</td><td>La population baisse</td></tr>
+              <tr class="frag"><td>On s'attend à une hausse des prix</td><td>On s'attend à une baisse des prix</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="d4"></div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="elasticite-demande">L'élasticité de la demande</h3>
+        <p>De combien la <b>quantité demandée</b> change-t-elle quand le <b>prix</b> change ?</p>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Élasticité de la demande : peu élastique, une grande variation de prix change peu la quantité ; très élastique, une petite variation de prix change beaucoup la quantité">
+<defs><marker id="mel" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mela" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker></defs>
+<path d="M60 290V42M60 290H358" class="s-fleche" marker-end="url(#mel)"/><text x="68" y="54" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="356" y="310" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M172 83L214 267" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/>
+<g class="frag"><path d="M60 129H182V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="182" cy="129" r="6" style="fill:#00a1bf"/><path d="M60 221H204V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="204" cy="221" r="6" style="fill:#00a1bf"/><path d="M46 129V221" style="stroke:var(--accent)" stroke-width="4"/><path d="M182 302H204" style="stroke:var(--accent)" stroke-width="4"/></g>
+<text x="200" y="24" text-anchor="middle" class="s-texte" style="font-size:16px;fill:var(--accent)">Peu élastique</text>
+<g class="frag"><text x="200" y="326" text-anchor="middle" class="s-texte-2" style="font-size:12.5px">variation de prix grande, de quantité petite</text></g>
+<path d="M440 290V42M440 290H738" class="s-fleche" marker-end="url(#mel)"/><text x="448" y="54" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="736" y="310" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M468 140L692 210" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/>
+<g class="frag"><path d="M440 164H543V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="543" cy="164" r="6" style="fill:#00a1bf"/><path d="M440 186H617V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="617" cy="186" r="6" style="fill:#00a1bf"/><path d="M426 164V186" style="stroke:var(--accent)" stroke-width="4"/><path d="M543 302H617" style="stroke:var(--accent)" stroke-width="4"/></g>
+<text x="580" y="24" text-anchor="middle" class="s-texte" style="font-size:16px;fill:var(--accent)">Très élastique</text>
+<g class="frag"><text x="580" y="326" text-anchor="middle" class="s-texte-2" style="font-size:12.5px">variation de prix petite, de quantité grande</text></g>
+</svg>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3>Élastique ou pas ? Des exemples</h3>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">⛽ 🩺 ⚰️</span><span class="etiquette">Peu élastique, voire nulle</span><p>Biens <b>indispensables</b> ou sans substitut : essence (à court terme), assurance-maladie de base, pompes funèbres. Même plus chers, on les achète.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🍫 ✈️ 👟</span><span class="etiquette">Très élastique</span><p>Biens avec beaucoup de <b>substituts</b> ou de luxe : une marque de chocolat, un voyage, des baskets. Un peu plus chers, on achète autre chose.</p></div>
+        </div>
+        <div class="retenir frag"><p>C'est pourquoi l'État taxe volontiers le tabac ou l'essence : la demande baisse peu, les recettes restent élevées.</p></div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="l2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 3 ===================== -->
+    <section class="section" id="offre">
+      <div class="diapo" data-titre="La courbe d'offre">
+        <div class="section-tete"><span class="section-num">03</span><h2>L'offre</h2></div>
+        <div class="definition">
+          <span class="etiquette">Définition</span>
+          La <b>quantité</b> de biens que les entreprises sont prêtes à <b>vendre</b> à un prix donné.
+        </div>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Courbe d'offre : plus le prix est élevé, plus la quantité offerte est élevée">
+<defs><marker id="mob" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="moba" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mobr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mobb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M80 300V22M80 300H478" class="s-fleche" marker-end="url(#mob)"/><text x="88" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="476" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M118 274L422 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="430" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<g class="frag"><path d="M80 222H194V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="194" cy="222" r="6" style="fill:var(--faux)"/><text x="204" y="212" text-anchor="start" class="s-texte" style="font-size:14px">A</text><text x="72" y="226" text-anchor="end" class="s-texte-2" style="font-size:13px">bon marché</text><text x="194" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">peu</text></g>
+<g class="frag"><path d="M80 118H346V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="346" cy="118" r="6" style="fill:var(--faux)"/><text x="332" y="110" text-anchor="end" class="s-texte" style="font-size:14px">B</text><text x="72" y="122" text-anchor="end" class="s-texte-2" style="font-size:13px">cher</text><text x="346" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">beaucoup</text></g>
+<g class="frag"><path d="M217 206L323 134" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#moba)"/></g>
+<g class="frag"><text x="520" y="120" text-anchor="start" class="s-texte" style="font-size:16px">Le prix monte…</text><text x="520" y="145" text-anchor="start" class="s-texte" style="font-size:16px">… les entreprises veulent</text><text x="520" y="170" text-anchor="start" class="s-texte" style="font-size:16px">vendre davantage.</text><text x="520" y="215" text-anchor="start" class="s-texte-2" style="font-size:14px">Produire devient plus rentable :</text><text x="520" y="235" text-anchor="start" class="s-texte-2" style="font-size:14px">de A vers B.</text></g>
+</svg>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3 id="deplacement-offre">Quand la courbe d'offre se déplace</h3>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Déplacement de la courbe d'offre : vers la droite (o′) s'il y a plus d'offre au même prix, vers la gauche (o″) s'il y en a moins">
+<defs><marker id="mod" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="moda" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="modr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="modb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M80 300V22M80 300H478" class="s-fleche" marker-end="url(#mod)"/><text x="88" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="476" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M137 274L365 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="373" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<path d="M80 170H445" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><text x="72" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">p</text>
+<g class="frag"><g class="glisse" style="--dx:-90px"><path d="M213 274L441 66" style="stroke:var(--accent)" stroke-width="3" stroke-linecap="round"/><text x="449" y="71" class="s-texte" style="font-size:15px;fill:var(--accent)">o′</text></g><path d="M266 170L331 170" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#moda)"/><text x="520" y="110" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--accent)">o → o′ : plus d’offre</text><text x="520" y="130" text-anchor="start" class="s-texte-2" style="font-size:13px">au même prix</text></g>
+<g class="frag"><g class="glisse" style="--dx:90px"><path d="M80 257L289 66" style="stroke:#00a1bf" stroke-width="3" stroke-linecap="round"/><text x="297" y="71" class="s-texte" style="font-size:15px;fill:#00a1bf">o″</text></g><path d="M243 170L186 170" style="stroke:#00a1bf" stroke-width="2.5" marker-end="url(#modb)"/><text x="520" y="200" text-anchor="start" class="s-texte" style="font-size:15px;fill:#00a1bf">o → o″ : moins d’offre</text><text x="520" y="220" text-anchor="start" class="s-texte-2" style="font-size:13px">au même prix</text></g>
+</svg>
+        </figure>
+        <div class="grille grille-2">
+          <div class="carte frag"><span class="etiquette gain">Plus d'offre (o → o′)</span><p>Coûts de production en baisse, productivité en hausse, bon climat (agriculture).</p></div>
+          <div class="carte frag"><span class="etiquette perte">Moins d'offre (o → o″)</span><p>Coûts en hausse, mauvais climat, guerre, grèves, outil de production détruit.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="o3"></div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="elasticite-offre">L'élasticité de l'offre</h3>
+        <p>Les entreprises peuvent-elles produire <b>vite</b> plus (ou moins) quand le prix change ?</p>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Élasticité de la offre : peu élastique, une grande variation de prix change peu la quantité ; très élastique, une petite variation de prix change beaucoup la quantité">
+<defs><marker id="mel" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mela" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker></defs>
+<path d="M60 290V42M60 290H358" class="s-fleche" marker-end="url(#mel)"/><text x="68" y="54" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="356" y="310" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M172 267L214 83" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/>
+<g class="frag"><path d="M60 221H182V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="182" cy="221" r="6" style="fill:var(--faux)"/><path d="M60 129H204V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="204" cy="129" r="6" style="fill:var(--faux)"/><path d="M46 221V129" style="stroke:var(--accent)" stroke-width="4"/><path d="M182 302H204" style="stroke:var(--accent)" stroke-width="4"/></g>
+<text x="200" y="24" text-anchor="middle" class="s-texte" style="font-size:16px;fill:var(--accent)">Peu élastique</text>
+<g class="frag"><text x="200" y="326" text-anchor="middle" class="s-texte-2" style="font-size:12.5px">variation de prix grande, de quantité petite</text></g>
+<path d="M440 290V42M440 290H738" class="s-fleche" marker-end="url(#mel)"/><text x="448" y="54" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="736" y="310" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M468 210L692 140" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/>
+<g class="frag"><path d="M440 186H543V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="543" cy="186" r="6" style="fill:var(--faux)"/><path d="M440 164H617V290" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="617" cy="164" r="6" style="fill:var(--faux)"/><path d="M426 186V164" style="stroke:var(--accent)" stroke-width="4"/><path d="M543 302H617" style="stroke:var(--accent)" stroke-width="4"/></g>
+<text x="580" y="24" text-anchor="middle" class="s-texte" style="font-size:16px;fill:var(--accent)">Très élastique</text>
+<g class="frag"><text x="580" y="326" text-anchor="middle" class="s-texte-2" style="font-size:12.5px">variation de prix petite, de quantité grande</text></g>
+</svg>
+          <figcaption>Peu élastique : il faut des années pour planter un vignoble. Très élastique : une imprimante 3D produit plus dès demain.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== 4 ===================== -->
+    <section class="section" id="equilibre">
+      <div class="diapo" data-titre="Le point d'équilibre">
+        <div class="section-tete"><span class="section-num">04</span><h2>L'équilibre du marché</h2></div>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Équilibre du marché : au point où l'offre rencontre la demande ; au-dessus du prix d'équilibre, il y a un excédent ; en dessous, une pénurie">
+<defs><marker id="meq" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="meqa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="meqr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="meqb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M110 300V22M110 300H508" class="s-fleche" marker-end="url(#meq)"/><text x="118" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="506" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M148 66L452 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<path d="M148 274L452 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<g class="frag"><path d="M110 105H395" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><path d="M205 105H395" style="stroke:var(--faux)" stroke-width="7" opacity=".55"/><text x="102" y="109" text-anchor="end" class="s-texte-2" style="font-size:13px">prix trop haut</text><text x="300" y="93" text-anchor="middle" class="s-texte" style="font-size:14px;fill:var(--faux)">excédent : invendus</text></g>
+<g class="frag"><path d="M110 235H395" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><path d="M205 235H395" style="stroke:#00a1bf" stroke-width="7" opacity=".55"/><text x="102" y="239" text-anchor="end" class="s-texte-2" style="font-size:13px">prix trop bas</text><text x="300" y="259" text-anchor="middle" class="s-texte" style="font-size:14px;fill:#00a1bf">pénurie : files d’attente</text></g>
+<g class="frag"><path d="M110 170H300V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="300" cy="170" r="6" style="fill:var(--accent)"/><text x="314" y="174" text-anchor="start" class="s-texte" style="font-size:14px">point d’équilibre</text><text x="102" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">prix d’équilibre</text><text x="300" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">quantité d’équilibre</text></g>
+</svg>
+          <figcaption>Le prix et la quantité se fixent à la rencontre de l'offre et de la demande.</figcaption>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3>Le marché se corrige tout seul</h3>
+        <p class="chaine-titre frag">Prix trop haut…</p>
+        <div class="chaine frag">
+          <span class="maillon">Excédent : des invendus</span>
+          <span class="maillon">Les vendeurs baissent leurs prix</span>
+          <span class="maillon fin">Retour vers l'équilibre</span>
+        </div>
+        <p class="chaine-titre frag">Prix trop bas…</p>
+        <div class="chaine frag">
+          <span class="maillon">Pénurie : tout est vendu, des clients attendent</span>
+          <span class="maillon">Les vendeurs montent leurs prix</span>
+          <span class="maillon fin">Retour vers l'équilibre</span>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="choc">Et si la demande augmente ?</h3>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Si la demande augmente, la courbe de demande se déplace vers la droite : le nouvel équilibre a un prix et une quantité plus élevés">
+<defs><marker id="mch" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mcha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mchr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mchb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M110 300V22M110 300H508" class="s-fleche" marker-end="url(#mch)"/><text x="118" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="506" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M148 66L452 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<path d="M148 274L452 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<path d="M110 170H300V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="300" cy="170" r="6" style="fill:var(--texte-2)"/><text x="286" y="174" text-anchor="end" class="s-texte" style="font-size:14px">E₁</text><text x="102" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">p₁</text><text x="300" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">q₁</text>
+<g class="frag"><g class="glisse" style="--dx:-80px"><path d="M224 66L475 238" style="stroke:var(--accent)" stroke-width="3" stroke-linecap="round"/><text x="483" y="243" class="s-texte" style="font-size:15px;fill:var(--accent)">d′</text></g></g>
+<g class="frag"><path d="M110 144H338V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="338" cy="144" r="6" style="fill:var(--accent)"/><text x="348" y="134" text-anchor="start" class="s-texte" style="font-size:14px">E₂</text><text x="102" y="148" text-anchor="end" class="s-texte-2" style="font-size:13px">p₂</text><text x="338" y="318" text-anchor="middle" class="s-texte-2" style="font-size:13px">q₂</text><path d="M308 165L330 149" style="stroke:var(--accent)" stroke-width="2.5" marker-end="url(#mcha)"/></g>
+<g class="frag"><text x="545" y="110" text-anchor="start" class="s-texte" style="font-size:15px">La demande augmente :</text><text x="545" y="132" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--accent)">le prix monte (p₁ → p₂)</text><text x="545" y="154" text-anchor="start" class="s-texte" style="font-size:15px">on échange plus (q₁ → q₂).</text><text x="545" y="200" text-anchor="start" class="s-texte-2" style="font-size:13px">Si cela touche tous les biens :</text><text x="545" y="218" text-anchor="start" class="s-texte-2" style="font-size:13px">inflation par la demande (ch. 43)</text></g>
+</svg>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="q3"></div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="realite">Dans la réalité</h3>
+                <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">⏳</span><span class="etiquette">Décalage de temps</span><p>Produire plus prend du temps.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🌫️</span><span class="etiquette">Manque de transparence</span><p>On ne connaît pas tous les prix.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🤪</span><span class="etiquette">Irrationalité</span><p>On achète aussi par envie, par mode.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏛️</span><span class="etiquette">Interventions de l'État</span><p>Prix fixés, taxes, subventions.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">👑</span><span class="etiquette">Structure du marché</span><p>Un seul vendeur fixe ses prix : le monopole.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🏭💨</span><span class="etiquette">Coûts cachés</span><p>La pollution n'est pas dans le prix (ch. 42).</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5 ===================== -->
+    <section class="section" id="formes">
+      <div class="diapo" data-titre="Combien de vendeurs ?">
+        <div class="section-tete"><span class="section-num">05</span><h2>Les formes de marché</h2></div>
+        <div class="tableau-wrap">
+          <table class="tableau">
+            <thead><tr><th></th><th>Un vendeur</th><th>Quelques vendeurs</th><th>Beaucoup de vendeurs</th></tr></thead>
+            <tbody>
+              <tr class="frag"><th>Un acheteur</th><td>Monopole bilatéral</td><td>Monopsone partiel</td><td>Monopsone pur</td></tr>
+              <tr class="frag"><th>Quelques acheteurs</th><td>Monopole partiel</td><td>Oligopsone bilatéral</td><td>Oligopsone pur</td></tr>
+              <tr class="frag"><th>Beaucoup d'acheteurs</th><td><b>Monopole</b></td><td><b>Oligopole</b></td><td><b>Concurrence parfaite</b></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grille grille-3">
+          <div class="carte frag"><span class="etiquette">Monopole</span><p>Un seul vendeur : le réseau d'eau de la commune, La Poste pour les lettres de moins de 50 g.</p></div>
+          <div class="carte frag"><span class="etiquette">Oligopole</span><p>Quelques vendeurs : Swisscom, Sunrise et Salt pour la téléphonie mobile.</p></div>
+          <div class="carte frag"><span class="etiquette">Concurrence parfaite</span><p>Beaucoup de vendeurs : les maraîchers d'un grand marché.</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="monopole">Le monopole</h3>
+        <div class="grille grille-3">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">💊</span><span class="etiquette">Monopole privé</span><p>Grâce à un <b>brevet</b> (un nouveau médicament) ou à une situation particulière (le seul restaurant du village).</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🚰</span><span class="etiquette">Monopole public</span><p>Voulu par l'État : activité <b>peu rentable</b> ou nécessaire au <b>bien commun</b>.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🛡️</span><span class="etiquette">Monopole régalien</span><p>Tâches réservées à l'État : <b>armée, police, justice, monnaie</b> (la BNS, ch. 48).</p></div>
+        </div>
+      </div>
+
+      <div class="diapo">
+        <h3 id="suisse">En Suisse</h3>
+        <div class="grille grille-2">
+          <div class="carte frag carte-emoji"><span class="emoji-carte">⚖️</span><span class="etiquette">Protéger la concurrence</span><p>La <b>loi sur les cartels</b> interdit les accords qui suppriment la concurrence. La <b>Commission de la concurrence (COMCO)</b> la fait respecter et peut infliger des amendes.</p></div>
+          <div class="carte frag carte-emoji"><span class="emoji-carte">🗳️</span><span class="etiquette">Des choix politiques</span><p>Certains marchés sont organisés par l'État : assurance des bâtiments (<b>ECAB</b> à Fribourg), assurance-maladie de base, électricité pour les petits clients.</p></div>
+        </div>
+        <div class="retenir frag"><p>Les <b>lobbies</b> (groupes d'intérêts) pèsent fortement sur ces choix. Moins de concurrence, c'est aussi l'« îlot de cherté » (ch. 47).</p></div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="f2"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 6 ===================== -->
+    <section class="section" id="controle">
+      <div class="diapo" data-titre="Le prix maximum">
+        <div class="section-tete"><span class="section-num">06</span><h2>Quand l'État contrôle les prix</h2></div>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Prix maximum : l'État fixe un loyer plafond de 1500 francs sous l'équilibre de 2000 francs ; la demande dépasse l'offre, il y a pénurie">
+<defs><marker id="mpx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mpxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mpxr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mpxb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M110 300V22M110 300H508" class="s-fleche" marker-end="url(#mpx)"/><text x="118" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="506" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M148 66L452 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<path d="M148 274L452 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<path d="M110 170H300V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="300" cy="170" r="6" style="fill:var(--texte-2)"/><text x="102" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">2000 fr.</text>
+<g class="frag"><path d="M110 222H475" style="stroke:var(--accent)" stroke-width="3"/><text x="102" y="226" text-anchor="end" class="s-texte-2" style="font-size:13px">1500 fr.</text><text x="475" y="214" text-anchor="end" class="s-texte" style="font-size:14px;fill:var(--accent)">prix plafond</text></g>
+<g class="frag"><path d="M224 236H376" style="stroke:#00a1bf" stroke-width="7" opacity=".6"/><text x="300" y="258" text-anchor="middle" class="s-texte" style="font-size:15px;fill:#00a1bf">pénurie</text><text x="545" y="120" text-anchor="start" class="s-texte" style="font-size:15px">Au prix plafond :</text><text x="545" y="142" text-anchor="start" class="s-texte" style="font-size:15px;fill:#00a1bf">beaucoup veulent louer,</text><text x="545" y="164" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--faux)">peu veulent construire.</text><text x="545" y="205" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--accent)">→ pénurie de logements</text></g>
+</svg>
+          <figcaption>Prix maximum : protéger les consommateurs. Exemple fictif de loyer.</figcaption>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3 id="plancher">Le prix minimum garanti</h3>
+        <figure class="schema">
+          <svg viewBox="0 0 760 330" role="img" aria-label="Prix minimum : l'État garantit 60 centimes par litre de lait au-dessus de l'équilibre de 45 centimes ; l'offre dépasse la demande, il y a surproduction">
+<defs><marker id="mpn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--texte-3)"/></marker><marker id="mpna" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="mpnr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--faux)"/></marker><marker id="mpnb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:#00a1bf"/></marker></defs>
+<path d="M110 300V22M110 300H508" class="s-fleche" marker-end="url(#mpn)"/><text x="118" y="34" class="s-texte-2" style="font-size:13px">p (prix)</text><text x="506" y="320" text-anchor="end" class="s-texte-2" style="font-size:13px">q (quantité)</text>
+<path d="M148 66L452 274" style="stroke:#00a1bf" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="279" class="s-texte" style="font-size:15px;fill:#00a1bf">d</text>
+<path d="M148 274L452 66" style="stroke:var(--faux)" stroke-width="3.5" stroke-linecap="round"/><text x="460" y="71" class="s-texte" style="font-size:15px;fill:var(--faux)">o</text>
+<path d="M110 170H300V300" fill="none" style="stroke:var(--texte-3)" stroke-dasharray="4 4"/><circle cx="300" cy="170" r="6" style="fill:var(--texte-2)"/><text x="102" y="174" text-anchor="end" class="s-texte-2" style="font-size:13px">45 ct.</text>
+<g class="frag"><path d="M110 118H475" style="stroke:var(--accent)" stroke-width="3"/><text x="102" y="122" text-anchor="end" class="s-texte-2" style="font-size:13px">60 ct.</text><text x="475" y="138" text-anchor="end" class="s-texte" style="font-size:14px;fill:var(--accent)">prix plancher</text></g>
+<g class="frag"><path d="M224 104H376" style="stroke:var(--faux)" stroke-width="7" opacity=".6"/><text x="300" y="92" text-anchor="middle" class="s-texte" style="font-size:15px;fill:var(--faux)">excédent</text><text x="545" y="120" text-anchor="start" class="s-texte" style="font-size:15px">Au prix plancher :</text><text x="545" y="142" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--faux)">on produit plus,</text><text x="545" y="164" text-anchor="start" class="s-texte" style="font-size:15px;fill:#00a1bf">on achète moins.</text><text x="545" y="205" text-anchor="start" class="s-texte" style="font-size:15px;fill:var(--accent)">→ surproduction</text></g>
+</svg>
+          <figcaption>Prix minimum : protéger les producteurs. Exemple fictif : l'État rachète ou subventionne l'excédent.</figcaption>
+        </figure>
+      </div>
+
+      <div class="diapo">
+        <h3>En résumé</h3>
+        <div class="tableau-wrap">
+          <table class="tableau">
+            <thead><tr><th></th><th>Définition</th><th>Objectif</th><th>Risque</th></tr></thead>
+            <tbody>
+              <tr class="frag"><th>Prix plafond</th><td>Prix maximum autorisé</td><td>Protéger le <b>consommateur</b></td><td><b>Pénurie</b></td></tr>
+              <tr class="frag"><th>Prix plancher</th><td>Prix minimum garanti</td><td>Protéger le <b>producteur</b></td><td><b>Surproduction</b></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="retenir frag"><p>Dans les deux cas, l'État empêche le prix d'atteindre l'équilibre. Sous l'équilibre, la demande dépasse l'offre ; au-dessus, l'offre dépasse la demande.</p></div>
+        <div class="exemple frag">En Suisse, le <b>Surveillant des prix</b> (« Monsieur Prix ») surveille les prix là où la concurrence ne joue pas : électricité, eau, transports publics, médicaments.</div>
+      </div>
+
+      <div class="diapo">
+        <div class="eclair" data-q="x2"></div>
+      </div>
+    </section>
+
+    <div class="diapo">
+      <h3>Objectif du chapitre</h3>
+      <div class="carte frag"><span class="etiquette">Objectif</span><p>J'explique, à l'aide de graphiques prédéfinis et sur la base quantité / prix, des exemples concrets sur : le <b>fonctionnement d'un marché</b> ; la <b>courbe de demande</b> et son déplacement ; la <b>courbe de l'offre</b> et son déplacement ; l'<b>élasticité-prix</b> de la demande ; la <b>fonction de contrôle des prix</b>.</p></div>
+    </div>
+
+    <div class="diapo diapo-fin">
+      <div class="suite">
+        <div>
+          <h3>Avons-nous tout vu ?</h3>
+          <p>Passez à l'entraînement : 38 questions, avec la correction après chaque réponse.</p>
+        </div>
+        <a class="bouton" href="test.html" data-onglet>Commencer l'entraînement →</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../commun/onglets.js"></script>
+<script src="../../commun/quiz.js"></script>
+<script src="questions.js"></script>
+<script src="../../commun/theorie.js"></script>
+<!-- Mode présentation : fichier de l'enseignant, absent du site publié -->
+<script src="../../commun/presentation.js"></script>
+</body>
+</html>

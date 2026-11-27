@@ -13,15 +13,29 @@
 <header class="index-hero">
   <div class="sur">Tout le programme d'Économie &amp; Droit · Maturité professionnelle</div>
   <h1><span class="emoji" aria-hidden="true">😊</span> <span class="titre-degrade">L'économie, c'est ma vie !</span> <span class="emoji" aria-hidden="true">😊</span></h1>
+  <a class="lien-cousin" id="lienCousin" href="https://dga-epc.github.io/"></a>
+  <style>
+  .lien-cousin{display:inline-block;margin-top:0;font-size:14px;font-weight:500;font-style:italic;color:#e9d5ff;opacity:.85;text-decoration:none;transition:opacity .2s,transform .2s}
+  .lien-cousin:hover{opacity:1;transform:scale(1.05);text-decoration:underline}
+  </style>
+  <script>
+  (function(){
+    const phrases = ["Et la compta : ça te va ?", "Et la compta ? On y va ?", "Et la compta ? Pourquoi pas !"];
+    const rare = "Et la compta : c'est du caca ?"; // 1 fois sur 20
+    document.getElementById('lienCousin').textContent =
+      Math.random() < 0.05 ? rare : phrases[Math.floor(Math.random()*phrases.length)];
+  })();
+  </script>
   <div class="recherche">
     <input type="search" id="q" placeholder="Rechercher un thème, un mot-clé…" aria-label="Rechercher">
     <div class="filtres" id="filtres" aria-label="Filtrer par domaine"></div>
   </div>
+  <p class="avertissement-relu" id="avertissement-relu" hidden><span class="non-relu">*</span> Chapitre pas encore relu par l'enseignant : il peut contenir des erreurs ou des approximations.</p>
 </header>
 
 <main class="index-corps" id="liste"></main>
 
-<footer class="pied">Économie &amp; Droit · Maturité professionnelle</footer>
+<footer class="pied">Économie &amp; Droit · Maturité professionnelle<br><a href="Apropos.html">À propos</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions générales</a></footer>
 
 <script src="commun/onglets.js"></script>
 <script src="catalogue.js"></script>
@@ -79,7 +93,7 @@
         carte.dataset.branche = t.domaine;
         carte.innerHTML = `
           <div class="theme-haut">
-            <span class="chap">Vol. ${num(t).vol} · Chapitre <strong>${num(t).chap}</strong></span>
+            <span class="chap">Vol. ${num(t).vol} · Chapitre <strong>${num(t).chap}</strong>${t.pret !== false && t.relu === false ? '<span class="non-relu" title="Chapitre pas encore relu par l\'enseignant : il peut contenir des erreurs ou des approximations.">*</span>' : ""}</span>
           </div>
           <div class="theme-bas">
             <h3>${t.titre}</h3>
@@ -95,6 +109,8 @@
     });
     if (!total) liste.innerHTML = '<p class="vide">Aucun thème ne correspond à cette recherche.</p>';
   }
+  // Remarque « non relu » : visible tant qu'un chapitre disponible a relu: false
+  document.getElementById("avertissement-relu").hidden = !themes.some((t) => t.pret !== false && t.relu === false);
   champ.addEventListener("input", rendre);
   rendre();
 })();

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<script>if(location.protocol==='http:'&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))location.replace('https:'+location.href.slice(5));</script>
+<link rel="icon" type="image/svg+xml" href="commun/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="commun/favicon-32.png">
+<title>À propos – Qui se cache derrière « L'économie, c'est ma vie ! » ?</title>
+<meta name="description" content="La véritable (et légèrement exagérée) histoire du prof derrière « L'économie, c'est ma vie ! ».">
+<style>
+:root{--bg:#0b0b0c;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.13);--ink:#f3f3f1;--muted:#a9a9a3;
+      --o:#e9812b;--g:#87a13a;--b:#00a1bf;--w:#f3f3f1}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.blob{position:fixed;border-radius:50%;filter:blur(100px);opacity:.30;z-index:0;animation:float 18s ease-in-out infinite alternate}
+.blob.a{width:480px;height:480px;background:var(--g);top:-160px;left:-140px}
+.blob.b{width:420px;height:420px;background:var(--o);bottom:-170px;right:-110px;animation-delay:-6s}
+.blob.c{width:320px;height:320px;background:var(--b);top:40%;left:60%;opacity:.18;animation-delay:-11s}
+@keyframes float{to{transform:translate(60px,-40px) scale(1.15)}}
+.wrap{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:28px 16px 40px}
+.comic{font-family:Impact,"Arial Black","Segoe UI Black",sans-serif;letter-spacing:.03em;font-weight:900;text-transform:uppercase}
+
+/* Héros */
+.hero{text-align:center;padding:10px 0 24px}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.06);border:1px solid var(--line);padding:5px 13px;border-radius:999px}
+h1{margin:14px 0 6px;font-size:clamp(30px,5.5vw,56px);line-height:1.02;
+   background:linear-gradient(90deg,var(--o),var(--g),var(--b),var(--g),var(--o));background-size:300% 100%;
+   -webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 9s linear infinite;
+   filter:drop-shadow(4px 4px 0 rgba(0,0,0,.55))}
+@keyframes shine{to{background-position:300% 0}}
+.sub{color:var(--muted);font-size:16px;margin:0}
+.legende{color:var(--muted);font-size:13.5px;font-style:italic;margin:12px auto 0;max-width:520px}
+.portrait{position:relative;width:240px;height:240px;margin:26px auto 6px}
+.portrait img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid var(--g);box-shadow:0 0 0 8px rgba(135,161,58,.18),0 20px 50px rgba(0,0,0,.6)}
+.portrait .avatar{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;font-size:100px;
+   background:conic-gradient(from 200deg,var(--o),var(--g),var(--b),var(--o));border:5px solid #111;
+   box-shadow:0 0 0 6px rgba(135,161,58,.25),0 20px 50px rgba(0,0,0,.6)}
+.burst{position:absolute;right:-36px;top:-4px;background:var(--o);color:#111;font-size:22px;padding:12px 14px;border-radius:50%;transform:rotate(14deg);
+       box-shadow:3px 3px 0 #000;animation:wob 2.4s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(-8deg) scale(1.1)}}
+
+/* Blocs */
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:18px 0;backdrop-filter:blur(10px)}
+h2{margin:0 0 10px;font-size:28px;color:var(--g)}
+p{margin:0 0 10px;font-size:15.5px}
+.origin p:first-of-type::first-letter{font-family:Impact,"Arial Black",sans-serif;font-size:52px;float:left;line-height:.9;margin:4px 8px 0 0;color:var(--o)}
+
+/* Pouvoirs */
+.powers{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.pw{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:14px;
+    transition:transform .2s,border-color .2s,box-shadow .2s}
+.pw:hover{transform:translateY(-4px) rotate(-.6deg);border-color:var(--c);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+.pw .ic{flex:none;font-size:30px;width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.07);transition:transform .3s}
+.pw:hover .ic{transform:scale(1.2) rotate(-10deg)}
+.pw h3{margin:0 0 3px;font-size:15px;color:var(--c)}
+.pw .real{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.pw p{font-size:14px;margin:4px 0 0}
+
+/* Jauges */
+.stat{display:grid;grid-template-columns:230px 1fr 90px;align-items:center;gap:10px;margin:9px 0;font-size:14px;font-weight:600}
+.bar{height:14px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--c),#fff);animation:fill 1.6s cubic-bezier(.2,1,.3,1) forwards;animation-delay:var(--d)}
+@keyframes fill{to{width:var(--w)}}
+.stat span:last-child{text-align:right;color:var(--muted);font-size:12.5px}
+
+/* Kryptonite */
+.kryp ul{list-style:none;padding:0;margin:0}
+.kryp li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.kryp li:last-child{border:0}
+
+.motto{text-align:center;font-size:clamp(24px,4vw,36px);margin:28px 0 10px;color:#fff;text-shadow:3px 3px 0 var(--g)}
+.close{display:block;margin:20px auto 0;font:inherit;font-weight:700;color:#111;background:linear-gradient(135deg,var(--o),#f5a35c);border:0;border-radius:999px;padding:11px 26px;cursor:pointer;box-shadow:0 8px 24px rgba(233,129,43,.35);transition:transform .2s}
+.close:hover{transform:scale(1.06)}
+.foot{text-align:center;margin-top:22px;font-size:12px;color:var(--muted);opacity:.75}
+.foot a{color:inherit;text-decoration:none}.foot a:hover{text-decoration:underline}
+
+@media (max-width:600px){
+  .stat{grid-template-columns:1fr 80px}.stat .bar{grid-column:1/-1;grid-row:2}
+  .burst{right:-10px;font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.bar i{width:var(--w)}}
+</style>
+</head>
+<body>
+<div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="tag">Dossier confidentiel · déclassifié par la COMCO</span>
+    <h1 class="comic">La main invisible ? C'est lui.</h1>
+    <p class="sub">Le héros que l'économie de marché ne méritait pas… mais dont la maturité professionnelle avait besoin.</p>
+    <div class="portrait">
+      <img src="commun/apropos-portrait.jpg" alt="Le prof en chute libre, en parachute" onerror="this.outerHTML='<div class=&quot;avatar&quot;>🦸</div>'">
+      <span class="burst comic">PIB !</span>
+    </div>
+    <p class="legende">Chute libre, comme le PIB suisse en 2020. Lui aussi a remonté la pente : le parachute a joué le rôle du chômage partiel.</p>
+  </header>
+
+  <section class="card origin">
+    <h2 class="comic">📜 Les origines du héros</h2>
+    <p>Tout héros a une origine. Adam Smith a eu la main invisible. Lui, il a eu un <strong>apprentissage de commerce</strong>. Les effets secondaires sont irréversibles : depuis ce jour, il voit des courbes d'offre et de demande partout. Même au rayon fromage. Surtout au rayon fromage.</p>
+    <p>Et c'est là son pouvoir originel : contrairement à certains qui parlent d'économie depuis leur tour d'ivoire, lui, <strong>il y était</strong>. Il a classé, photocopié, agrafé, et préparé le café de toute l'équipe : un flux réel sans aucun flux monétaire en retour. Alors quand vous lui dites que vous êtes épuisé·e après votre journée au bureau, il ne fait pas semblant de comprendre : <em>il sait</em>.</p>
+    <p>Ensuite, pendant <strong>plus de dix ans</strong>, il a parcouru le monde impitoyable du privé, accumulant les super-pouvoirs plus vite que la BNS n'a accumulé les devises. Voici le dossier complet.</p>
+  </section>
+
+  <section class="card">
+    <h2 class="comic">⚡ Super-pouvoirs</h2>
+    <div class="powers">
+      <div class="pw" style="--c:var(--o)"><span class="ic">🏦</span><div><span class="real">Banque</span><h3>L'Homme-Taux-Directeur</h3><p>A survécu au monde bancaire. Sait pourquoi votre compte d'épargne rapporte 0,1 %… et ose quand même vous l'expliquer en souriant.</p></div></div>
+      <div class="pw" style="--c:var(--g)"><span class="ic">🛒</span><div><span class="real">Vendeur</span><h3>Monsieur Élasticité</h3><p>A testé l'élasticité-prix sur le terrain : à −20 %, les clients accourent ; à +20 %, ils s'évaporent. Le chapitre 41, il ne l'a pas lu : il l'a vécu.</p></div></div>
+      <div class="pw" style="--c:var(--b)"><span class="ic">📦</span><div><span class="real">Responsable des achats</span><h3>Le Briseur d'Oligopoles</h3><p>Rabais, escomptes, frais de port&nbsp;: les fournisseurs tremblent encore. La Commission de la concurrence aurait voulu l'engager.</p></div></div>
+      <div class="pw" style="--c:var(--o)"><span class="ic">🧮</span><div><span class="real">Comptable</span><h3>Le PIB Ambulant</h3><p>Calcule la valeur ajoutée de son thé vert du matin : récolte, séchage, tasse, sourire. Résultat&nbsp;: très élevée. Méthode par la production... of course.</p></div></div>
+      <div class="pw" style="--c:var(--g)"><span class="ic">🔭</span><div><span class="real">Démonstrateur en astronomie</span><h3>L'Observateur de l'Expansion</h3><p>A montré au public des galaxies qui s'éloignent à toute vitesse. Comme les prix en 2022. Il reconnaît une expansion quand il en voit une.</p></div></div>
+      <div class="pw" style="--c:var(--b)"><span class="ic">📸</span><div><span class="real">Photographe indépendant · président du photo-club</span><h3>Monsieur Pixel</h3><p>Le Surveillant des prix a ses tarifs à l'œil ; lui a toute la classe dans l'objectif. Surtout le natel caché sous le pupitre pendant le test.</p></div></div>
+      <div class="pw" style="--c:var(--o)"><span class="ic">💻</span><div><span class="real">Webmaster · plusieurs sites à son actif</span><h3>Le Tisseur de Toile</h3><p>Oui, c'est lui qui a codé les questions éclair. Et les mots en gras qui se cachent en mode apprentissage. Vous pouvez le remercier. Ou pas.</p></div></div>
+      <div class="pw" style="--c:var(--g)"><span class="ic">🎬</span><div><span class="real">Créateur de contenu</span><h3>Le Conteur</h3><p>Rend palpitant le carré magique de Kaldor. Même le réchauffement climatique. Si, si. Ne le mettez pas au défi.</p></div></div>
+      <div class="pw" style="--c:var(--b)"><span class="ic">✈️</span><div><span class="real">Pilote privé</span><h3>Le Faucon des Alpes</h3><p>Vu d'en haut, le circuit économique est bien réel : trains, camions, flux de marchandises… et des bouchons à Fribourg, une externalité négative parfaitement visible.</p></div></div>
+      <div class="pw" style="--c:var(--o)"><span class="ic">🐎</span><div><span class="real">Officier de cavalerie</span><h3>Le Chevalier de la Relance</h3><p>A mené des chevaux et des hommes. Mener une classe de 3<sup>e</sup> année un lundi matin à 8 heures, en pleine récession de motivation ? Politique de relance garantie.</p></div></div>
+      <div class="pw" style="--c:var(--g)"><span class="ic">💍</span><div><span class="real">Marié depuis <span id="ansMariage">plus de 25</span> ans et heureux père de 3 filles</span><h3>L'Indestructible</h3><p><span id="ansMariage2">Plus de 25</span> ans de mariage, trois filles, une seule salle de bain : une offre fixe, une demande triple, une pénurie chronique chaque matin. Aucun prix plafond n'a jamais réglé le problème. Alors vos révisions d'éval, à côté, c'est un spa.</p></div></div>
+      <div class="pw" style="--c:var(--b)"><span class="ic">🏆</span><div><span class="real">Modestie</span><h3>Le Plus Humble de l'Univers</h3><p>Un CV plus long que le Code des obligations, des bulletins qui ont fait exploser l'IDH familial, un savoir que même l'IA lui envie… et pourtant, pas un mot à ce sujet. L'humilité incarnée. MDR.</p></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="comic">📊 Indicateurs conjoncturels</h2>
+    <div class="stat" style="--c:var(--g)"><span>⚖️ Maîtrise de l'offre et de la demande</span><div class="bar"><i style="--w:100%;--d:.1s"></i></div><span>équilibre</span></div>
+    <div class="stat" style="--c:var(--b)"><span>🎓 Compréhension des apprentis</span><div class="bar"><i style="--w:100%;--d:.3s"></i></div><span>vécu</span></div>
+    <div class="stat" style="--c:var(--o)"><span>😂 L'économie, c'est sa vie</span><div class="bar"><i style="--w:97%;--d:.5s"></i></div><span>surchauffe</span></div>
+    <div class="stat" style="--c:var(--g)"><span>🍵 Niveau de zénitude</span><div class="bar"><i style="--w:92%;--d:.7s"></i></div><span>prix stables</span></div>
+    <div class="stat" style="--c:var(--o)"><span>🙈 Tolérance aux excuses</span><div class="bar"><i style="--w:2%;--d:.9s"></i></div><span>&lt; 2 % (BNS)</span></div>
+  </section>
+
+  <section class="card kryp">
+    <h2 class="comic">☢️ Kryptonite connue</h2>
+    <ul>
+      <li>🔄 Confondre PIB et PNB. (Il le sentira. Il le sent toujours.)</li>
+      <li>🐶 « Mon chien a mangé ma courbe de demande. » Elle s'est donc déplacée vers la gauche, j'imagine ?</li>
+      <li>💸 « L'inflation, c'est quand les prix sont chers. » Non : c'est quand ils <em>montent</em>.</li>
+      <li>⚖️ « Les juges fédéraux sont élus par le peuple. » (Par l'Assemblée fédérale. Chapitre 10. Respirez.)</li>
+      <li>❓ « Est-ce que ça compte pour l'examen ? » (Réponse : oui. Toujours oui.)</li>
+    </ul>
+  </section>
+
+  <p class="motto comic">« L'économie, c'est ma vie ! »</p>
+
+  <button class="close" onclick="window.close()">✕ Fermer le dossier</button>
+  <div class="foot"><a href="index.html">Programme</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions générales</a></div>
+</div>
+<script>
+// Années de mariage calculées automatiquement (mariage en 1998)
+(function(){ var n = new Date().getFullYear() - 1998;
+  document.getElementById('ansMariage').textContent = n;
+  document.getElementById('ansMariage2').textContent = n; })();
+</script>
+</body>
+</html>
